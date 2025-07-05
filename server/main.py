@@ -8,7 +8,7 @@ from modules.query_handlers import query_chain
 from logger import logger
 import os
 
-app=FastAPI(title="RagBot2.0")
+app=FastAPI(title="RagBot")
 
 # allow frontend
 
@@ -123,3 +123,7 @@ async def ask_question(question: str = Form(...)):
 @app.get("/test")
 async def test():
     return {"message":"Testing successfull..."}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

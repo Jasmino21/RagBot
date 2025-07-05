@@ -14,7 +14,7 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENV = "us-east-1"
-PINECONE_INDEX_NAME = "medical-index"
+PINECONE_INDEX_NAME = os.environ["PINECONE_INDEX_NAME"]
 
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 

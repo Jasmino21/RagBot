@@ -1,0 +1,5 @@
+.env
+.venv/
+ragbot/
+__pycache__/
+test.py

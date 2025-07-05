@@ -37,6 +37,5 @@ aiofiles
 # Process
 tqdm
 
-
-
-# pip install -r requirements.txt
+streamlit
+requests
