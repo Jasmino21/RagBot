@@ -89,7 +89,7 @@ async def ask_question(question: str = Form(...)):
         # 4. Convert to LangChain Documents
         docs = [
             Document(
-                page_content=match["metadata"].get("text", ""),
+                page_content=match["metadata"].get("page_content", ""),
                 metadata=match["metadata"]
             ) for match in res["matches"]
         ]
